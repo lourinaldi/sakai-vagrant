@@ -6,7 +6,7 @@ class sakai::subversion {
   vcsrepo { "/vagrant/sakai-src":
     ensure   => present,
     provider => svn,
-    source   => "https://source.sakaiproject.org/svn/sakai/trunk",
+    source   => "https://source.sakaiproject.org/svn/sakai/tags/sakai-2.9.2/",
     require  => Package["subversion"],
   }
 }
